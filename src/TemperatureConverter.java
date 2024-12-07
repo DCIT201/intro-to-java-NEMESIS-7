@@ -6,11 +6,11 @@ import java.util.function.Function;
 public class TemperatureConverter {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("What unit of temperature would you like to convert from? \nPlease choose between Celsius and Fahrenheit: ");
-        String unit = input.nextLine().trim().toLowerCase();
         boolean continueConv = true;
 
         while (continueConv) {
+            System.out.println("What unit of temperature would you like to convert from? \nPlease choose between Celsius and Fahrenheit: ");
+            String unit = input.nextLine().trim().toLowerCase();
             try {
                 switch (unit){
                     case "celsius":
